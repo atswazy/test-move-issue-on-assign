@@ -17,4 +17,4 @@ jobs:
         with:
           token: ${{ secrets.PROJECTS_MOVE }}
           project: 1
-          owner: ${{ env.ORGANIZATION_NAME }}
+          owner: ${{ env.OWNER }}
