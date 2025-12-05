@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Move issue on assign
-        uses: immitsu/move-issue-on-assign@drop-owner-input
+        uses: immitsu/move-issue-on-assign@v1.2.0
         with:
           token: ${{ secrets.PROJECTS_MOVE }}
           project: 1
