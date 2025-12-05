@@ -4,17 +4,14 @@ on:
   issues:
     types: [assigned, unassigned]
 
-env:
-  OWNER: ${{ github.repository_owner }}
-
 jobs:
   move-issue:
     runs-on: ubuntu-latest
 
     steps:
       - name: Move issue on assign
-        uses: immitsu/move-issue-on-assign@main
+        uses: immitsu/move-issue-on-assign@v1.0.0
         with:
           token: ${{ secrets.PROJECTS_MOVE }}
           project: 1
-          owner: ${{ env.OWNER }}
+          owner: ${{ github.repository_owner }}
