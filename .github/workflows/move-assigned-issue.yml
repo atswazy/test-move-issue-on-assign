@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Move issue on assign
-        uses: immitsu/move-issue-on-assign@next
+        uses: immitsu/move-issue-on-assign@main
         with:
           token: ${{ secrets.PROJECTS_MOVE }}
           project: 1
