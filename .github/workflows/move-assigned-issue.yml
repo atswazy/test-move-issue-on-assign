@@ -14,3 +14,4 @@ jobs:
         with:
           token: ${{ secrets.PROJECTS_MOVE }}
           project: 1
+          move-to: "Done"
